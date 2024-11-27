@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header .header-img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Controls the height of the header image */
+}
+
+
+/* Navigation Bar Styles */
+nav {
+    background-color:lightblue;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    position: relative; /* Required for dropdown positioning */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color:cornflowerblue;
+}
+
+/* Dropdown Menu */
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:mediumturquoise;
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    padding: 12px 16px;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color:blue;
+}
+
+/* Main Content Styles */
+.content {
+    padding: 20px;
+    text-align: justify;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2em;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: lightblue;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .footer-img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Controls the height of the footer image */
+}
+
+footer p {
+    margin-top: 10px;
+}
